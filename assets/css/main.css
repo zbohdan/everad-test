@@ -6,6 +6,10 @@
   background-color: #e2e2e2;
 }
 
+/* -------------------------------------------------------------
+                        SECTION 1                          
+------------------------------------------------------------- */
+
 .order {
   width: 100%;
   height: 840px;
@@ -210,8 +214,9 @@
 
 .prices > div:first-of-type > div > div > img:last-of-type {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translate(0, -50%);
 }
 
 .prices > div:first-of-type > h5 {
@@ -327,6 +332,7 @@ form > button::after {
 form > button > strong {
   font-size: 28px;
 }
+
 .mobile > p {
   margin-top: 14px;
   text-align: center;
@@ -361,6 +367,10 @@ form > button > strong {
   font-size: 14px;
   color: #666;
 }
+
+/* -------------------------------------------------------------
+                        SECTION 2                          
+------------------------------------------------------------- */
 
 .fungus-danger {
   width: 100%;
@@ -436,6 +446,7 @@ form > button > strong {
 .stats {
   position: relative;
   margin-top: 72px;
+  margin-bottom: 10px;
   padding: 40px 86px 42px 90px;
   border: 3px solid #f4d3bb;
   border-radius: 9px;
@@ -463,5 +474,174 @@ form > button > strong {
   padding-right: 63px;
   padding-left: 52px;
   background-color: white;
+  transform: translate(-50%, -50%);
+}
+
+/* -------------------------------------------------------------
+                        SECTION 3                          
+------------------------------------------------------------- */
+
+.why-useless {
+  width: 100%;
+  background: url(../images/wave-back-transition.png) top center/100% auto no-repeat, #eef7fa;
+}
+
+.why-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1169px;
+  margin: auto;
+}
+
+.why-container > img {
+  margin-top: 166px;
+}
+
+.why-container > h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 48px;
+  color: #383334;
+}
+
+.why-items-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 79px;
+}
+
+.why-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+  border-top: 5px solid #a8c53a;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 15px 0px rgba(37, 83, 129, 0.08);
+}
+
+.why-item > div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #eef7fa;
+  box-shadow: inset 0px -5px 4px -3px rgba(37, 83, 129, 0.08);
+  transform: translate(-50%, -50%);
+}
+
+.why-item > h3 {
+  margin-top: 65px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
+}
+
+.why-item > h5 {
+  margin-top: 14px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #222;
+}
+
+.why-item > h5 > span {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666;
+}
+
+.why-item > img {
+  margin-top: 30px;
+}
+
+.why-item > h2 {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 26px;
+  color: #ff6b00;
+}
+
+.why-item > p {
+  margin-top: 15px;
+  padding: 0 43px 25px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  color: #444;
+}
+
+.why-item > p > strong {
+  font-weight: 500;
+  color: black;
+}
+
+.conclusion {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 64px;
+  padding: 27px 91px 22px 94px;
+  border: 3px solid #f4d3bb;
+  border-radius: 10px;
+}
+
+.conclusion > p {
+  text-align: center;
+  font-size: 21px;
+  line-height: 28px;
+  color: #444;
+}
+
+.conclusion > p > strong {
+  font-weight: 500;
+  color: black;
+}
+
+.conclusion > div {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 170px;
+  height: 20px;
+  background-color: #eef7fa;
+  transform: translate(-50%, -50%);
+}
+
+.conclusion > div > span:first-of-type {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 28px;
+  color: #f4d3bb;
+  transform: translate(-50%, -50%);
+}
+
+.conclusion > div > span:last-of-type {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: black;
   transform: translate(-50%, -50%);
 }

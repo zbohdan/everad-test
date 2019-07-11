@@ -263,6 +263,7 @@ form > input[type='tel'] {
   opacity: 1;
   color: black;
   background-color: #eef2f7;
+  box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.04);
 }
 
 form > img:first-of-type {
@@ -303,11 +304,11 @@ form > img:last-of-type {
 }
 form > button {
   position: relative;
-  width: 100%;
+  width: 218px;
   height: 70px;
   margin-top: 5px;
   border: none;
-  border-radius: 35px;
+  border-radius: 32px;
   font: 700 16px Roboto, sans-serif;
   background: linear-gradient(to right, #ffbc02, #ffce02);
   cursor: pointer;
@@ -321,7 +322,7 @@ form > button::after {
   bottom: 5px;
   content: '';
   border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 32px;
+  border-radius: 27px;
 }
 form > button > strong {
   font-size: 28px;
@@ -360,9 +361,107 @@ form > button > strong {
   font-size: 14px;
   color: #666;
 }
-/* .info-item > p span {
-  
-  font-weight: 300;
-  font-size: 34px;
-  color: #0b0b0b;
-} */
+
+.fungus-danger {
+  width: 100%;
+  background-color: white;
+}
+
+.fungus-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1169px;
+  margin: auto;
+}
+
+.fungus-container > img {
+  margin-top: 27px;
+}
+
+.fungus-container > h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 48px;
+  color: #383334;
+}
+
+.fungus-container > p {
+  margin-top: 42px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #2b2828;
+}
+
+.fungus-consequences {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 28px;
+  /* flex-direction: row; */
+}
+
+.fungus-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.fungus-item > div {
+  display: flex;
+  align-items: center;
+}
+
+.fungus-item > div > p {
+  padding-left: 19px;
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+}
+
+.strip {
+  width: 50px;
+  height: 34px;
+  border-bottom: 3px solid #becbd8;
+}
+
+.fungus-item > p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #444;
+}
+
+.stats {
+  position: relative;
+  margin-top: 72px;
+  padding: 40px 86px 42px 90px;
+  border: 3px solid #f4d3bb;
+  border-radius: 9px;
+}
+
+.stats > p {
+  text-align: center;
+  font-size: 22px;
+  line-height: 28px;
+  color: #444;
+}
+
+.stats > p > strong {
+  font-weight: 500;
+  color: black;
+}
+
+.stats > div {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 63px;
+  padding-left: 52px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}

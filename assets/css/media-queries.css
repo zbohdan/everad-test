@@ -215,6 +215,10 @@
     width: 32%;
   }
 
+  .fungus-item > div > img {
+    width: 90%;
+  }
+
   .stats {
     padding: 35px 30px 25px;
   }

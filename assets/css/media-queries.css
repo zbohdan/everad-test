@@ -1,66 +1,451 @@
+@media (min-width: 320px) and (max-width: 1280px) {
+  /* -------------------------------------------------------------
+                        SECTION 1                          
+------------------------------------------------------------- */
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
+  .order-container {
+    width: 100%;
+  }
+  .legs {
+    display: none;
+  }
 
-@media (min-width: 1281px) {
-  
-  //CSS
-  
+  .mobile-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -50px;
+  }
+
+  .miko-label {
+    position: static;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .miko-label > h3 {
+    font-size: 45px;
+  }
+
+  .info-and-mobile {
+    justify-content: space-around;
+  }
+
+  /* -------------------------------------------------------------
+                        SECTION 2                          
+------------------------------------------------------------- */
+
+  .fungus-container {
+    width: 100%;
+  }
+
+  .fungus-container > img {
+    margin-top: -5px;
+  }
+
+  .fungus-container > p {
+    padding-left: 10px;
+  }
+
+  .fungus-consequences {
+    flex-direction: column;
+  }
+
+  .fungus-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+
+  .stats {
+    width: 90%;
+  }
+
+  /* -------------------------------------------------------------
+                        SECTION 3                          
+------------------------------------------------------------- */
+
+  .why-container {
+    width: 100%;
+  }
+
+  .why-container > img {
+    margin-top: 70px;
+  }
+
+  .why-items-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-item {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .conclusion {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  /* -------------------------------------------------------------
+                        SECTION 4                          
+------------------------------------------------------------- */
+
+  .efficient-container {
+    width: 100%;
+  }
+
+  .efficient-items-container {
+    justify-content: space-around;
+  }
+
+  .efficient-item {
+    width: 32%;
+  }
+
+  /* -------------------------------------------------------------
+                        SECTION 5                          
+------------------------------------------------------------- */
+
+  .how-container {
+    width: 100%;
+  }
+
+  .use-picture {
+    justify-content: space-around;
+    width: 90%;
+  }
+
+  .use-picture > img {
+    align-self: center;
+  }
+
+  .use-picture > div {
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* -------------------------------------------------------------
+                        SECTION 1                         
+------------------------------------------------------------- */
+
+  .miko-label > h3 {
+    font-size: 40px;
+  }
+
+  .info-and-mobile {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 73px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .info > h1 {
+    font-size: 30px;
+  }
+
+  .info > h1,
+  .info > h2 {
+    text-align: center;
+  }
+
+  .info > h2 {
+    font-size: 23px;
+    padding-top: 5px;
+  }
+
+  .info > h2 > span {
+    border-width: 4px !important;
+  }
+
+  .mobile {
+    width: 450px;
+    margin-top: 20px;
+  }
+
+  .delivery {
+    left: 75%;
+  }
+
+  .mobile > h2 {
+    max-width: initial;
+  }
+
+  .mobile > p {
+    margin-top: 22px;
+  }
+
+  .prices {
+    justify-content: space-around;
+    width: 400px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+  }
+
+  .mobile > div:last-of-type {
+    justify-content: center;
+  }
+
+  /* -------------------------------------------------------------
+                        SECTION 2                         
+------------------------------------------------------------- */
+
+  .fungus-consequences {
+    flex-direction: row;
+    width: 300%;
+    transition: all 1s ease;
+  }
+
+  .fungus-item {
+    flex-direction: column;
+    width: 32%;
+  }
+
+  .stats {
+    padding: 35px 30px 25px;
+  }
+
+  /* -------------------------------------------------------------
+                        SECTION 3                         
+------------------------------------------------------------- */
+
+  .conclusion {
+    margin-bottom: 30px;
+    padding: 32px 22px 18px;
+  }
+
+  /* -------------------------------------------------------------
+                        SECTION 4                         
+------------------------------------------------------------- */
+
+  .efficient-container > img {
+    margin-top: 35px;
+  }
+
+  .efficient-container > h1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .efficient-items-container {
+    align-items: center;
+    width: 300%;
+    margin-top: 35px;
+    margin-left: 0;
+    transition: all 1s ease;
+  }
+
+  .efficient-item > p {
+    padding-bottom: 15px;
+  }
+
+  /* -------------------------------------------------------------
+                        SECTION 5                         
+------------------------------------------------------------- */
+
+  .use-picture {
+    margin-top: 30px;
+  }
+  .use-picture > img {
+    display: none;
+  }
+
+  .how-instructions {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .instruction-item {
+    flex: 1;
+    flex-direction: column;
+    margin-right: 25px;
+  }
+
+  .instruction-item:last-of-type {
+    margin-right: 0;
+  }
+
+  .instruction-item > div {
+    display: none;
+  }
+
+  .instruction-item > img {
+    width: 100%;
+  }
+
+  .instruction-item > p {
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
 }
 
 /* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-  //CSS
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  //CSS
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  //CSS
-  
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  //CSS
-  
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
-  //CSS
-  
+  /* -------------------------------------------------------------
+                        SECTION 1                         
+------------------------------------------------------------- */
+
+  .order {
+    background: url(../images/wave-transition.png) bottom center/100% auto no-repeat, #f3f9ff;
+  }
+  .short-successes {
+    flex-direction: column;
+    width: 120%;
+    margin: auto;
+  }
+
+  .short-successes > div {
+    margin-bottom: 20px;
+    margin-left: 40%;
+    transform: translateX(-40%);
+  }
+
+  .info > h1,
+  .info > h2 {
+    margin-left: 20px;
+    text-align: initial;
+  }
+
+  .mobile {
+    width: 270px;
+  }
+
+  .delivery {
+    left: 50%;
+  }
+  .mobile > h2 {
+    max-width: 180px;
+  }
+
+  .mobile > p {
+    margin-top: 14px;
+  }
+
+  .prices {
+    justify-content: space-between;
+    width: 210px;
+  }
+
+  form {
+    display: flex;
+    width: 220px;
+  }
+
+  .mobile > div:last-of-type {
+    justify-content: initial;
+  }
+  /* -------------------------------------------------------------
+                        SECTION 2                         
+------------------------------------------------------------- */
+  .fungus-consequences {
+    align-items: center;
+  }
+
+  .fungus-container > h1 {
+    font-size: 35px;
+  }
+
+  .fungus-container > p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .fungus-container > p {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: start;
+  }
+
+  .fungus-item > div {
+    flex-direction: column;
+  }
+
+  .fungus-item > div > p {
+    margin-top: 10px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .strip {
+    width: 50px;
+    height: 20px;
+    border-bottom: 3px solid #becbd8;
+  }
+
+  .fungus-item > p {
+    text-align: center;
+  }
+
+  .stats {
+    margin-top: 35px;
+    padding: 35px 15px 15px 15px;
+  }
+  /* -------------------------------------------------------------
+                        SECTION 3                         
+------------------------------------------------------------- */
+
+  .why-container > h1 {
+    font-size: 30px;
+  }
+
+  .why-items-container {
+    margin-top: 69px;
+  }
+  /* -------------------------------------------------------------
+                        SECTION 4                         
+------------------------------------------------------------- */
+  .why-efficient {
+    background: url(../images/wave-transition.png) top center/100% auto no-repeat,
+      url(../images/wave-back-transition.png) bottom center/100% auto no-repeat,
+      linear-gradient(to bottom, #eef7fa 2%, white 2%, white 99%, #eef7fa 99%);
+  }
+
+  .efficient-container > h1 {
+    font-size: 30px;
+  }
+
+  .efficient-container > h4 {
+    /* margin-top: 20px; */
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  /* -------------------------------------------------------------
+                        SECTION 5                         
+------------------------------------------------------------- */
+  .how-container > img {
+    margin-top: 25px;
+  }
+
+  .how-container > h1 {
+    font-size: 33px;
+    line-height: 36px;
+  }
+
+  .use-picture {
+    margin-top: 24px;
+  }
+
+  .instruction-item > p {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }

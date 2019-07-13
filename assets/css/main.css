@@ -12,31 +12,35 @@
 
 .order {
   width: 100%;
-  height: 840px;
   background: url(../images/wave-transition.png) bottom center/100% auto no-repeat,
     url(../images/foreground-blue.png) top left/100% 100%, url(../images/living-room.jpg) top left/auto 100% no-repeat;
 }
 
 .order-container {
+  display: flex;
   width: 1169px;
-  height: 100%;
   margin: auto;
 }
 
 .legs {
   position: relative;
-  width: 500px;
 }
 
 .legs > img {
   position: absolute;
-  right: -50px;
   top: 0;
+  left: -213px;
+}
+
+.mobile-container {
+  position: relative;
+  margin-top: 0;
+  margin-left: 500px;
 }
 
 .miko-label {
   position: absolute;
-  right: 85px;
+  left: -280px;
   top: 14px;
   display: flex;
   align-items: center;
@@ -47,11 +51,6 @@
   font-weight: 900;
   font-size: 22px;
   color: #383334;
-}
-
-.mobile-container {
-  margin-top: 0;
-  margin-left: 500px;
 }
 
 .short-successes {
@@ -78,15 +77,22 @@
   display: flex;
   justify-content: space-between;
   margin-top: 56px;
+  margin-bottom: 166px;
+}
+
+.info {
+  max-width: 400px;
 }
 
 .info > h1 {
+  display: inline-block;
   font-weight: 900;
   font-size: 44px;
   color: #383334;
 }
 
 .info > h2 {
+  display: inline-block;
   font-weight: 700;
   font-size: 34px;
   color: #383334;
@@ -135,6 +141,7 @@
 }
 
 .mobile {
+  flex-shrink: 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -148,8 +155,8 @@
 
 .delivery {
   position: absolute;
-  left: 60px;
-  top: -7px;
+  left: 50%;
+  top: 11px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -161,15 +168,18 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   background-color: #f3f9ff;
+  transform: translate(-50%, -50%);
 }
 
 .mobile > h2 {
+  max-width: 180px;
   margin-top: 47px;
   text-align: center;
   font-size: 20px;
 }
 
 .mobile > h2 > strong {
+  display: block;
   font-weight: 500;
   color: #ff6b00;
 }
@@ -228,7 +238,6 @@
 
 .prices > div:last-of-type > h5 {
   margin-bottom: 7px;
-  /* text-align: center; */
   padding-left: 11px;
   font-size: 14px;
   color: black;
@@ -351,7 +360,6 @@ form > button > strong {
   position: absolute;
   bottom: 0;
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
   width: 100%;
   height: 44px;
@@ -400,7 +408,6 @@ form > button > strong {
 }
 
 .fungus-container > p {
-  margin-top: 42px;
   text-align: center;
   margin-top: 28px;
   font-weight: 700;
@@ -413,7 +420,6 @@ form > button > strong {
   justify-content: space-between;
   width: 100%;
   margin-top: 28px;
-  /* flex-direction: row; */
 }
 
 .fungus-item {
@@ -427,6 +433,7 @@ form > button > strong {
 }
 
 .fungus-item > div > p {
+  max-width: 150px;
   padding-left: 19px;
   font-weight: 500;
   font-size: 22px;
@@ -440,6 +447,7 @@ form > button > strong {
 }
 
 .fungus-item > p {
+  max-width: 330px;
   margin-top: 20px;
   font-size: 18px;
   line-height: 28px;
@@ -522,7 +530,7 @@ form > button > strong {
   flex-direction: column;
   align-items: center;
   width: 370px;
-  border-top: 5px solid #a8c53a;
+  border: 5px solid #a8c53a;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0px 0px 15px 0px rgba(37, 83, 129, 0.08);
@@ -552,6 +560,7 @@ form > button > strong {
 }
 
 .why-item > h5 {
+  max-width: 280px;
   margin-top: 14px;
   text-align: center;
   font-weight: 500;
@@ -674,6 +683,7 @@ form > button > strong {
 }
 
 .efficient-container > h1 {
+  max-width: 850px;
   margin-top: 20px;
   text-align: center;
   font-weight: 900;
@@ -688,6 +698,7 @@ form > button > strong {
 
 .efficient-container > h4 {
   margin-top: 28px;
+  text-align: center;
   font-size: 23px;
   line-height: 48px;
   color: #444;
@@ -863,10 +874,23 @@ form > button > strong {
 }
 
 .instruction-item > p {
+  max-width: 225px;
   margin-top: 55px;
   margin-left: 30px;
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
   color: black;
+}
+
+/* -------------------------------------------------------------
+                        CAROUSEL                      
+------------------------------------------------------------- */
+
+.container-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
 }

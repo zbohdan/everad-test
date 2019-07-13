@@ -114,7 +114,7 @@
   }
 
   .use-picture {
-    justify-content: space-around;
+    justify-content: center;
     width: 90%;
   }
 
@@ -126,6 +126,10 @@
 
   .use-picture > div {
     flex-shrink: 0;
+  }
+
+  .instruction-item > p {
+    max-width: 175px;
   }
 }
 
